@@ -1,0 +1,51 @@
+{
+  "name": "afx-1024",
+  "version": "2.0.0",
+  "description": "AFX-1024 true zero-knowledge proof package for Node.js with Groth16 circuits and Schnorr NIZK support.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": "./src/index.js",
+  "bin": {
+    "afx1024": "./bin/afx1024.js"
+  },
+  "files": [
+    "bin",
+    "circuits",
+    "src",
+    "artifacts/README.md",
+    "PROTOCOL.md",
+    "SECURITY.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check src/index.js && node --check src/groth16.js && node --check src/sigma.js && node --check src/encoding.js && node --check bin/afx1024.js",
+    "test": "node --test test",
+    "example:sigma": "node examples/sigma.js",
+    "example:groth16": "node examples/groth16.js",
+    "circuit:compile": "bash scripts/compile-circuits.sh",
+    "circuit:setup": "bash scripts/setup-groth16.sh",
+    "circuit:verify": "bash scripts/verify-artifacts.sh"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "zero-knowledge",
+    "groth16",
+    "zk-snark",
+    "circom",
+    "blockchain",
+    "schnorr",
+    "cryptography"
+  ],
+  "author": "Izukanji Silwimba",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@noble/hashes": "^1.8.0",
+    "snarkjs": "^0.7.5"
+  },
+  "devDependencies": {
+    "circomlib": "^2.0.5"
+  }
+}
