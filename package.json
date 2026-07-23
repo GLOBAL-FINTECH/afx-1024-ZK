@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "check": "node --check src/index.js && node --check src/groth16.js && node --check src/sigma.js && node --check src/encoding.js && node --check bin/afx1024.js",
-    "test": "node --test test",
+    "test": "node --test test/afx1024.test.js",
     "example:sigma": "node examples/sigma.js",
     "example:groth16": "node examples/groth16.js",
     "circuit:compile": "bash scripts/compile-circuits.sh",
