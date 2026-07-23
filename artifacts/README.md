@@ -1,0 +1,1 @@
+Compiled WASM, R1CS, zkey and verification keys are intentionally not fabricated or committed here. Generate them reproducibly with the scripts and a verified Powers of Tau file. Production artifacts must come from a documented ceremony.
